@@ -1,10 +1,12 @@
-import React, { PropTypes } from 'react'
-import { Route, Redirect } from 'react-router-dom';
+import React from 'react'
+import { Link, Route } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className="jumbotron text-center">
-      <h1>Guideline Team</h1>
+      <Link to="/">
+        <h1>Guideline Team</h1>
+      </Link>
     </div>
   );
 }

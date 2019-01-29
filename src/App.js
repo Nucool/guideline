@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect, Link, BrowserRouter as Router } from 'react-router-dom'
-import logo from './logo.svg';
 import './App.css';
 import Public from './components/pages/Public'
+import GuidelinePage from './components/guideline/GuidelinePage'
+import ImplementConceptPage from './components/microservices/ImplementConceptPage'
+import ScrumPage from './components/scrum/ScrumPage'
 
 const Body = () => (
   <div>Body {process.env.PUBLIC_URL} Test</div>
@@ -17,13 +19,10 @@ const Page2 = () => (
 const Routes = props => (
   <Router basename={process.env.PUBLIC_URL}>
     <div>
-      <li>
-        <Link to="/Page1">Page1</Link>
-      </li>
       <Switch>
-        <Public exact path="/" component={Body} {...props} />
-        <Public exact path="/Page1" component={Page1} {...props} />
-        <Public exact path="/Page2" component={Page2} {...props} />
+        <Public exact path="/" component={GuidelinePage} {...props} />
+        <Public exact path="/microservices" component={ImplementConceptPage} {...props} />
+        <Public exact path="/scrum" component={ScrumPage} {...props} />
       </Switch>
     </div>
   </Router>
@@ -32,7 +31,7 @@ const Routes = props => (
 class App extends Component {
   render() {
     return (
-      <div>Test:{process.env.PUBLIC_URL}
+      <div>
         <Routes />
       </div>
     );
