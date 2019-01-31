@@ -5,6 +5,7 @@ import Public from './components/pages/Public'
 import GuidelinePage from './components/guideline/GuidelinePage'
 import ImplementConceptPage from './components/microservices/ImplementConceptPage'
 import ScrumPage from './components/scrum/ScrumPage'
+import GitHubPages from './components/knowledgesharing/GitHubPages'
 
 const Body = () => (
   <div>Body {process.env.PUBLIC_URL} Test</div>
@@ -23,6 +24,7 @@ const Routes = props => (
         <Public exact path="/" component={GuidelinePage} {...props} />
         <Public exact path="/microservices" component={ImplementConceptPage} {...props} />
         <Public exact path="/scrum" component={ScrumPage} {...props} />
+        <Public exact path="/githubPages" component={GitHubPages} {...props} />
       </Switch>
     </div>
   </Router>

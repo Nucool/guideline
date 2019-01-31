@@ -40,6 +40,7 @@ const GuidelinePage = () => {
             { team.map(item => <TeamTable key={item.name} {...item} />)}
             <li>Knowledge Sharing
               <ul>
+                <li><Link to="/githubPages">GitHub Pages</Link></li>
                 <li><a href="https://github.com/arunsawad/research_technology" target="_blank" >Research Technology</a></li>
                 <li><a href="https://github.com/arunsawad/prototype_microservice" target="_blank" >Prototype Microservice</a></li>
               </ul>
