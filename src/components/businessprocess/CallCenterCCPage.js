@@ -25,6 +25,12 @@ const CallCenterCCPage = () => {
               <img alt="CallCenter Type-A" src={process.env.PUBLIC_URL + "/images/callcenterType-A.jpg"} />
             </div>
           </div>
+          <div style={marginBox}>
+            <h4>Type-B (Insurance Only)</h4>
+            <div style={imageDiv}>
+              <img alt="CallCenter Type-B" src={process.env.PUBLIC_URL + "/images/callcenterType-B.jpg"} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
