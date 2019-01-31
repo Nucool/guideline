@@ -45,6 +45,11 @@ const GuidelinePage = () => {
                 <li><a href="https://github.com/arunsawad/prototype_microservice" target="_blank" >Prototype Microservice</a></li>
               </ul>
             </li>
+            <li>Business Process
+              <ul>
+                <li><Link to="/CallCenterCCPage">Call Center</Link></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
