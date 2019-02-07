@@ -35,6 +35,7 @@ const GuidelinePage = () => {
             <li>General
               <ul>
                 <li><Link to="/microservices">Microservice implement concept</Link></li>
+                <li><Link to="/MonolithicToMicroservicesPage">Monolithic To Microservices</Link></li>
               </ul>
             </li>
             { team.map(item => <TeamTable key={item.name} {...item} />)}
