@@ -8,6 +8,7 @@ import MonolithicToMicroservicesPage from './components/microservices/Monolithic
 import ScrumPage from './components/scrum/ScrumPage'
 import GitHubPages from './components/knowledgesharing/GitHubPages'
 import CallCenterCCPage from './components/businessprocess/CallCenterCCPage'
+import SourceControlPage from './components/sourceControl/SourceControlPage'
 
 const Body = () => (
   <div>Body {process.env.PUBLIC_URL} Test</div>
@@ -27,8 +28,9 @@ const Routes = props => (
         <Public exact path="/microservices" component={ImplementConceptPage} {...props} />
         <Public exact path="/ScrumPage" component={ScrumPage} {...props} />
         <Public exact path="/GitHubPages" component={GitHubPages} {...props} />
-        <Public exact path="/CallCenterCCPage" component={CallCenterCCPage} {...props} />
+        <Public exact path="/CallCenterCCPage" component={CallCenterCCPage} {...props} />SourceControlPage
         <Public exact path="/MonolithicToMicroservicesPage" component={MonolithicToMicroservicesPage} {...props} />
+        <Public exact path="/SourceControlPage" component={SourceControlPage} {...props} />
       </Switch>
     </div>
   </Router>
