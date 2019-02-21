@@ -97,7 +97,7 @@ const RunningServicesPage = () => {
                   <li>
                     <b>Testing</b>
                     <ul>
-                      <li>Proformance Testing</li>
+                      <li>Performance Testing</li>
                     </ul>
                   </li>
                 </ul>
