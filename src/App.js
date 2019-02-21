@@ -9,6 +9,7 @@ import ScrumPage from './components/scrum/ScrumPage'
 import GitHubPages from './components/knowledgesharing/GitHubPages'
 import CallCenterCCPage from './components/businessprocess/CallCenterCCPage'
 import SourceControlPage from './components/sourceControl/SourceControlPage'
+import RunningServicesPage from './components/services/RunningServicesPage'
 
 const Body = () => (
   <div>Body {process.env.PUBLIC_URL} Test</div>
@@ -31,6 +32,7 @@ const Routes = props => (
         <Public exact path="/CallCenterCCPage" component={CallCenterCCPage} {...props} />SourceControlPage
         <Public exact path="/MonolithicToMicroservicesPage" component={MonolithicToMicroservicesPage} {...props} />
         <Public exact path="/SourceControlPage" component={SourceControlPage} {...props} />
+        <Public exact path="/RunningServicesPage" component={RunningServicesPage} {...props} />
       </Switch>
     </div>
   </Router>
