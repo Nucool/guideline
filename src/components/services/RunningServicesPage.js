@@ -74,34 +74,49 @@ const RunningServicesPage = () => {
                   <li>
                     <b>Building Software</b>
                     <ul>
-                      <li>TDD (Unit Testing)</li>
-                      <li>Codebase</li>
-                      <li>Config Env.</li>
+                      <li>TDD (Unit Testing)<span className="glyphicon glyphicon-ok" style={{color:'green', paddingLeft: 5}}></span></li>
+                      <li>Codebase<span className="glyphicon glyphicon-time" style={{color:'#f0ad4e', paddingLeft: 5}}></span></li>
+                      <li>Config Env.<span className="glyphicon glyphicon-time" style={{color:'#f0ad4e', paddingLeft: 5}}></span></li>
                     </ul>
                   </li>
                   <li>
                     <b>Development and Deployment Process</b>
                     <ul>
-                      <li>[Develop] -> [Unit Test] -> [Build Artifacts] -> [Deploy] -> [Regression]</li>
-                      <li>Software Stack Develop (NodeJS, Javascript, Prometheus)</li>
-                      <li>Software Stack Test (Jest, Sinon)</li>
-                      <li>Software Stack Deployment (DockerFile, DockerCompose)</li>
+                      <li>[Develop] -> [Unit Test] -> [Build Artifacts] -> [Deploy] -> [Regression] <span className="glyphicon glyphicon-ok" style={{color:'green', paddingLeft: 5}}></span></li>
+                      <li>Software Stack Develop (NodeJS, Javascript, Prometheus)<span className="glyphicon glyphicon-time" style={{color:'#f0ad4e', paddingLeft: 5}}></span></li>
+                      <li>Software Stack Test (Jest, Sinon)<span className="glyphicon glyphicon-ok" style={{color:'green', paddingLeft: 5}}></span></li>
+                      <li>Software Stack Deployment (DockerFile, DockerCompose)<span className="glyphicon glyphicon-time" style={{color:'#f0ad4e', paddingLeft: 5}}></span></li>
                     </ul>
                   </li>
                   <li>
                     <b>Monitoring</b>
                     <ul>
-                      <li>Transaction Monitoring (Prometheus, Grafana)</li>
+                      <li>Transaction Monitoring (Prometheus, Grafana)<span className="glyphicon glyphicon-time" style={{color:'#f0ad4e', paddingLeft: 5}}></span></li>
                     </ul>
                   </li>
                   <li>
                     <b>Testing</b>
                     <ul>
-                      <li>Performance Testing</li>
+                      <li>Performance Testing (Jmeter)<span className="glyphicon glyphicon-ok" style={{color:'green', paddingLeft: 5}}></span></li>
                     </ul>
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+
+          <div style={marginBox}>
+            <h4>
+              <ul>
+                <li><b>Result</b></li>
+              </ul>
+            </h4>
+            <div style={imageDiv}>
+              <img alt="result1" style={{width:900}} src={process.env.PUBLIC_URL + "/images/runningservices/jmeterCLI1001con.jpg"} />
+            </div>
+            <br/>
+            <div style={imageDiv}>
+              <img alt="result2" style={{width:900}} src={process.env.PUBLIC_URL + "/images/runningservices/jmeterCLI1001data.jpg"} />
             </div>
           </div>
         </div>

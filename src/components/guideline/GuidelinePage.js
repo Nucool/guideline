@@ -38,6 +38,7 @@ const GuidelinePage = () => {
                 <li><Link to="/MonolithicToMicroservicesPage">Monolithic To Microservices</Link></li>
                 <li><Link to="/SourceControlPage">Source Control</Link></li>
                 <li><Link to="/RunningServicesPage">Running Services</Link></li>
+                <li><Link to="/MasterDataServicesPage">MasterData Services</Link></li>
               </ul>
             </li>
             { team.map(item => <TeamTable key={item.name} {...item} />)}
