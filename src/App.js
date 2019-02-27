@@ -10,6 +10,8 @@ import GitHubPages from './components/knowledgesharing/GitHubPages'
 import CallCenterCCPage from './components/businessprocess/CallCenterCCPage'
 import SourceControlPage from './components/sourceControl/SourceControlPage'
 import RunningServicesPage from './components/services/RunningServicesPage'
+import MasterDataServicesPage from './components/services/MasterDataServicesPage'
+import WhyMicroservicesPage from './components/microservices/WhyMicroservicesPage'
 
 const Body = () => (
   <div>Body {process.env.PUBLIC_URL} Test</div>
@@ -33,6 +35,8 @@ const Routes = props => (
         <Public exact path="/MonolithicToMicroservicesPage" component={MonolithicToMicroservicesPage} {...props} />
         <Public exact path="/SourceControlPage" component={SourceControlPage} {...props} />
         <Public exact path="/RunningServicesPage" component={RunningServicesPage} {...props} />
+        <Public exact path="/MasterDataServicesPage" component={MasterDataServicesPage} {...props} />
+        <Public exact path="/WhyMicroservicesPage" component={WhyMicroservicesPage} {...props} />
       </Switch>
     </div>
   </Router>
