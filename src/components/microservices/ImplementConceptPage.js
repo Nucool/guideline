@@ -23,7 +23,7 @@ const ImplementConceptPage = () => {
             <div style={marginBox}>
               <h4>Work Process - Methodology Agile</h4>
               <div style={{marginLeft:30}}>
-                <p><b>Scrum Framework</b> <Link to="/scrum" style={{marginLeft:50}}>acitivity</Link> </p>
+                <p><b>Scrum Framework</b> <Link to="/scrumPage" style={{marginLeft:50}}>acitivity</Link> </p>
                 <div style={imageDiv}>
                   <img alt="Scrum Framework" width="700px" src="https://scrumorg-website-prod.s3.amazonaws.com/drupal/inline-images/2017-05/ScrumFrameworkTest.png" />
                   Reference : <a href="https://www.scrum.org/resources/scrum-framework-poster">https://www.scrum.org/resources/scrum-framework-poster</a>
