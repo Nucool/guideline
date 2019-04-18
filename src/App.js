@@ -7,6 +7,7 @@ import ImplementConceptPage from './components/microservices/ImplementConceptPag
 import MonolithicToMicroservicesPage from './components/microservices/MonolithicToMicroservicesPage'
 import ScrumPage from './components/scrum/ScrumPage'
 import GitHubPages from './components/knowledgesharing/GitHubPages'
+import UnitTestPage from './components/knowledgesharing/UnitTestPage'
 import CallCenterCCPage from './components/businessprocess/CallCenterCCPage'
 import SourceControlPage from './components/sourceControl/SourceControlPage'
 import RunningServicesPage from './components/services/RunningServicesPage'
@@ -37,6 +38,7 @@ const Routes = props => (
         <Public exact path="/RunningServicesPage" component={RunningServicesPage} {...props} />
         <Public exact path="/MasterDataServicesPage" component={MasterDataServicesPage} {...props} />
         <Public exact path="/WhyMicroservicesPage" component={WhyMicroservicesPage} {...props} />
+        <Public exact path="/UnitTestPage" component={UnitTestPage} {...props} />
       </Switch>
     </div>
   </Router>
