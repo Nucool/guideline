@@ -13,6 +13,7 @@ import SourceControlPage from './components/sourceControl/SourceControlPage'
 import RunningServicesPage from './components/services/RunningServicesPage'
 import MasterDataServicesPage from './components/services/MasterDataServicesPage'
 import WhyMicroservicesPage from './components/microservices/WhyMicroservicesPage'
+import ProjectOnTeamPage from './components/team/ProjectOnTeamPage'
 
 const Body = () => (
   <div>Body {process.env.PUBLIC_URL} Test</div>
@@ -39,6 +40,7 @@ const Routes = props => (
         <Public exact path="/MasterDataServicesPage" component={MasterDataServicesPage} {...props} />
         <Public exact path="/WhyMicroservicesPage" component={WhyMicroservicesPage} {...props} />
         <Public exact path="/UnitTestPage" component={UnitTestPage} {...props} />
+        <Public exact path="/ProjectOnTeamPage" component={ProjectOnTeamPage} {...props} />
       </Switch>
     </div>
   </Router>
