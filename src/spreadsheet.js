@@ -4,7 +4,6 @@ import config from "/config";
  * Get the right values from it and assign.
  */
 export function load(callback) {
-  alert('a');
   window.gapi.client.load("sheets", "v4", () => {
     window.gapi.client.sheets.spreadsheets.values
       .get({

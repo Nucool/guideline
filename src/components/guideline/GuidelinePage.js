@@ -48,8 +48,13 @@ const GuidelinePage = () => {
             <li>Knowledge Sharing
               <ul>
                 <li><Link to="/githubPages">GitHub Pages</Link></li>
-                <li><a href="https://github.com/arunsawad/research_technology" target="_blank" >Research Technology</a></li>
-                <li><a href="https://github.com/arunsawad/prototype_microservice" target="_blank" >Prototype Microservice</a></li>
+                <li><a href="https://github.com/arunsawad/research_technology" target="_blank" rel="noopener noreferrer" >Research Technology</a></li>
+                <li><a href="https://github.com/arunsawad/prototype_microservice" target="_blank" rel="noopener noreferrer" >Prototype Microservice</a></li>
+              </ul>
+            </li>
+            <li>Research and Development Project
+              <ul>
+                <li><Link to="/MonitoringRealtimePage">Monitoring Realtime</Link></li>
               </ul>
             </li>
             <li>Business Process

@@ -9,10 +9,6 @@ const ScrumPage = (props) => {
     width: 700,
     textAlign: "center"
   }
-  let imageDiv800 = {
-    width: 800,
-    textAlign: "center"
-  }
   return (
     <div className="container-fluid">
       <div className="row">
@@ -68,7 +64,7 @@ const ScrumPage = (props) => {
                     <b>sprint -> 2 weeks</b>
                   </li>
                   <div style={imageDiv}>
-                    <a href={process.env.PUBLIC_URL + "/images/sprint_2_weeks.jpg"} target="_blank">
+                    <a href={process.env.PUBLIC_URL + "/images/sprint_2_weeks.jpg"} target="_blank"  rel="noopener noreferrer">
                       <img alt="Sprint 2 weeks" width="800px" src={process.env.PUBLIC_URL + "/images/sprint_2_weeks.jpg"} />
                     </a>
                   </div>

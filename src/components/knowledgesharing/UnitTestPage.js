@@ -1,19 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 //http://www.notaboutcode.com/post/18-test-properties/
 
 const UnitTestPage = () => {
   let marginBox = {
     marginLeft: 20,
     marginBottom: 30
-  }
-  let imageDiv = {
-    width: 700,
-    textAlign: "center"
-  }
-  let imageDiv800 = {
-    width: 800,
-    textAlign: "center"
   }
   let marginTable = {
     marginTop: 10,

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Switch, Route, Redirect, Link, BrowserRouter as Router } from 'react-router-dom'
+import { hot } from 'react-hot-loader'
+import { Switch, BrowserRouter as Router } from 'react-router-dom'
 import './App.css';
 import Public from './components/pages/Public'
 import GuidelinePage from './components/guideline/GuidelinePage'
@@ -14,16 +15,7 @@ import RunningServicesPage from './components/services/RunningServicesPage'
 import MasterDataServicesPage from './components/services/MasterDataServicesPage'
 import WhyMicroservicesPage from './components/microservices/WhyMicroservicesPage'
 import ProjectOnTeamPage from './components/team/ProjectOnTeamPage'
-
-const Body = () => (
-  <div>Body {process.env.PUBLIC_URL} Test</div>
-)
-const Page1 = () => (
-  <div>Page1</div>
-)
-const Page2 = () => (
-  <div>Page2</div>
-)
+import MonitoringRelatimePage from './components/researchanddevelopment/MonitoringRealtimePage'
 
 const Routes = props => (
   <Router basename={process.env.PUBLIC_URL}>
@@ -41,6 +33,7 @@ const Routes = props => (
         <Public exact path="/WhyMicroservicesPage" component={WhyMicroservicesPage} {...props} />
         <Public exact path="/UnitTestPage" component={UnitTestPage} {...props} />
         <Public exact path="/ProjectOnTeamPage" component={ProjectOnTeamPage} {...props} />
+        <Public exact path="/MonitoringRealtimePage" component={MonitoringRelatimePage} {...props} />
       </Switch>
     </div>
   </Router>
@@ -56,4 +49,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default hot(module)(App);

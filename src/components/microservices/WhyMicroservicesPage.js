@@ -39,10 +39,6 @@ const WhyMicroservicesPage = () => {
     width: 900,
     textAlign: "center"
   }
-  let imageDiv800 = {
-    width: 800,
-    textAlign: "center"
-  }
   return (
     <div className="container-fluid">
       <div className="row">

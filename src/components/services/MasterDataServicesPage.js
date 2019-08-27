@@ -5,18 +5,6 @@ const MasterDataServicesPage = () => {
     marginLeft: 20,
     marginBottom: 30
   }
-  let imageDiv = {
-    width: 700,
-    textAlign: "center"
-  }
-  let imageDivLeft = {
-    width: 700,
-    textAlign: "left"
-  }
-  let imageDiv800 = {
-    width: 800,
-    textAlign: "center"
-  }
   return (
     <div className="container-fluid">
       <div className="row">

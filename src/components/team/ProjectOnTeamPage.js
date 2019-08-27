@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import config from '../../config'
-//import spreadsheet from '../../spreadsheet'
 
 class ProjectOnTeamPage extends React.Component {
 
@@ -19,6 +17,7 @@ class ProjectOnTeamPage extends React.Component {
   componentDidMount() {
     // 1. Load the JavaScript client library.
     window.gapi.load("client:auth2", this.initClient);
+    console.log('test/')
   }
 
   onLoadData = async (isAuth) => {
@@ -96,7 +95,6 @@ class ProjectOnTeamPage extends React.Component {
       window.gapi.auth2.getAuthInstance().isSignedIn.listen(this.onLoadData);
       let isSign = window.gapi.auth2.getAuthInstance().isSignedIn.get()
 
-      console.log('instance', window.gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getName())
       this.onLoadData(isSign)
       console.log('isSign', isSign)
     });
@@ -125,14 +123,6 @@ class ProjectOnTeamPage extends React.Component {
     let marginBox = {
       marginLeft: 20,
       marginBottom: 30
-    }
-    let imageDiv = {
-      width: 700,
-      textAlign: "center"
-    }
-    let imageDiv800 = {
-      width: 800,
-      textAlign: "center"
     }
     return (
       <div className="container-fluid">
@@ -199,12 +189,12 @@ const AuthGoogle = (props) => {
     return (
       <div className="user-panel no-padding">
         <div className="pull-left image">
-          <img src={props.authImageUrl} className="img-circle" alt="User Image" />
+          <img src={props.authImageUrl} className="img-circle" alt="User" />
         </div>
         <div className="pull-left info no-padding">
           {props.authName} <br/>
-          <a href="#"><i className="fa fa-circle text-success"></i> Online</a>
-          <a href="#" className="btn btn-default btn-flat btn-sm no-margin"  onClick={props.signOut}>Sign out</a>
+          <a href="#top"><i className="fa fa-circle text-success"></i> Online</a>
+          <a href="#top" className="btn btn-default btn-flat btn-sm no-margin"  onClick={props.signOut}>Sign out</a>
         </div>
       </div>
     )
@@ -212,7 +202,7 @@ const AuthGoogle = (props) => {
   else {
     return (
       <h2>
-        <a href="#" className="btn btn-default btn-flat btn-sm"  onClick={props.signIn}>Authentication</a>
+        <a href="#top" className="btn btn-default btn-flat btn-sm"  onClick={props.signIn}>Authentication</a>
       </h2>
     )
   }
