@@ -16,6 +16,7 @@ import MasterDataServicesPage from './components/services/MasterDataServicesPage
 import WhyMicroservicesPage from './components/microservices/WhyMicroservicesPage'
 import ProjectOnTeamPage from './components/team/ProjectOnTeamPage'
 import MonitoringRelatimePage from './components/researchanddevelopment/MonitoringRealtimePage'
+import MonitoringRelatimeProductPage from './components/researchanddevelopment/MonitoringRealtimeProductPage'
 import BlockchainTechnologyPage from './components/researchanddevelopment/BlockchainTechnologyPage'
 
 const Routes = props => (
@@ -35,6 +36,7 @@ const Routes = props => (
         <Public exact path="/UnitTestPage" component={UnitTestPage} {...props} />
         <Public exact path="/ProjectOnTeamPage" component={ProjectOnTeamPage} {...props} />
         <Public exact path="/MonitoringRealtimePage" component={MonitoringRelatimePage} {...props} />
+        <Public exact path="/MonitoringRealtimeProductPage" component={MonitoringRelatimeProductPage} {...props} />
         <Public exact path="/BlockchainTechnologyPage" component={BlockchainTechnologyPage} {...props} />
       </Switch>
     </div>
