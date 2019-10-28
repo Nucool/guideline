@@ -31,64 +31,100 @@ const MonitoringRealtimePage = () => {
                             <li><h4><b>โครงการพัฒนา</b></h4></li>
                             <ul>
                                 <li>
-                                    สร้าง Project Monitoring Realtime กราฟแสดงผล ข้อมูลการเปิดงานแต่ละประกันภัย (งานเคลม, งานตรวจสภาพรถ, งาน Call-Center) New Technology ที่คาดหวังจะใช้ <span style={{ color: 'red' }}><b>Golang, InfluxDB, Grafana</b></span>
+                                    สร้าง dashboard เพื่อตรวจสอบงานที่มีสถานะยกเลิก
+                                    <ul>
+                                        <li>1 แสดงงานยกเลิกแบ่งตามประกันภัย</li>
+                                        <li>2 แสดงงานยกเลิกแบ่งตามประเภทงาน</li>
+                                        <li>3 แสดงงานยกเลิกบนแผนที่</li>
+                                        <li>4 แสดงงานยกเลิกแบ่งตามเขตของจังหวัดกรุงเทพ</li>
+                                        <li>5 แสดงงานยกเลิกแบ่งตามเหตุผลการยกเลิกงาน</li>
+                                        <li>6 แจ้งเตือนงานยกเลิกเมื่อถึงกำหนดตามจำนวน (Email, LINE)</li>
+                                    </ul>
                                 </li>
                                 <li>
-                                    ในด้าน Business คาดหวังเพื่อนำข้อมูลจากระบบ Bike มาสร้าง Metric เพื่อการวิเคราะห์ต่างๆ
+                                    สร้าง dashboard เพื่อแสดงงานเคลม (เคลมสด) ตามแต่ละสถานะ เพื่อตรวจสอบจำนวนงานและเวลาของงานนั่นๆ ที่มาค้างอยู่ในสถานะ ดังกล่าว
                                     <ul>
-                                        <li>1 วิเคราะห์การเปิดงานผ่านหน้าระบบ bike งานเยอะในช่วงเวลาไหน จัดกลุ่มตามประกันภัย สามารถใช้ข้อมูล ในการวางกลยุทธ์ Operation Process ได้</li>
-                                        <li>2 วิเคราะห์จำนวน request ที่เข้ามาที่ Server ว่า request ไหนซ้ำๆ สามารถใช้ข้อมูล เพื่อในการ Scale Module นั้นๆ (ถ้า module นั้นสามารถ scale ได้)</li>
+                                        <li>1 Dashboard Operation Process แสดงข้อมูลในทุกสถานะงาน (เปิดงาน, รับงาน, เริ่มงาน/กำลังเดินทาง, ถึงที่เกิดเหตุ/ปฏิบัติงาน, ส่งงาน/ตรวจสอบข้อมูลเบื้องต้น, Pre-Approved, คีย์งานแล้ว)</li>
+                                        <li>2 Dashboard Department Call-Center แสดงข้อมูลสถานะเปิดงาน, งานที่เกิน SLA</li>
+                                        <li>3 Dashboard Department Surveyor แสดงข้อมูลสถานะ (รับงาน, เริ่มงาน/กำลังเดินทาง, ถึงที่เกิดเหตุ/ปฏิบัติงาน), งานที่เกิน SLA</li>
+                                        <li>4 Dashboard Department Supervisor แสดงข้อมูลสถานะส่งงาน/ตรวจสอบข้อมูลเบื้องต้น, งานที่เกิน SLA</li>
+                                        <li>5 Dashboard Department Key แสดงข้อมูลสถานะ Pre-Approved, งานที่เกิน SLA</li>
                                     </ul>
                                 </li>
                             </ul>
                         </ul>
                         <ul>
-                            <li><h4><b>ผลการดำเนินงาน</b></h4></li>
+                            <li><h4><b>ผลการดำเนินงาน และ สรุปผล</b></h4></li>
                             <ul>
                                 <li>
-                                    New Technology
+                                สร้าง dashboard เพื่อตรวจสอบงานที่มีสถานะยกเลิก
                                     <ul>
-                                        <li><a href="https://golang.org/doc/" target="_blank">Golang</a></li>
-                                        <li><a href="https://www.influxdata.com/" target="_blank">InfluxDB</a></li>
-                                        <li><a href="https://grafana.com/" target="_blank">Grafana</a></li>
+                                        <li>1 แสดงงานยกเลิกแบ่งตามประกันภัย
+                                            <div style={imageDiv}>
+                                                <img alt="stat" style={{ width: 500 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/groupByInsurer.jpg"} />
+                                            </div><br/>
+                                        </li>
+                                        <li>2 แสดงงานยกเลิกแบ่งตามประเภทงาน
+                                            <div style={imageDiv}>
+                                                <img alt="stat" style={{ width: 500 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/groupByTaskType.jpg"} />
+                                            </div><br/>
+                                        </li>
+                                        <li>3 แสดงงานยกเลิกบนแผนที่
+                                            <div style={imageDiv}>
+                                                <img alt="stat" style={{ width: 500 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/onMap.jpg"} />
+                                            </div><br/>
+                                        </li>
+                                        <li>4 แสดงงานยกเลิกแบ่งตามเขตของจังหวัดกรุงเทพ
+                                            <div style={imageDiv}>
+                                                <img alt="stat" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/groupByAumphur.jpg"} />
+                                            </div><br/>
+                                        </li>
+                                        <li>5 แสดงงานยกเลิกแบ่งตามเหตุผลการยกเลิกงาน
+                                            <div style={imageDiv}>
+                                                <img alt="stat" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/taskReason.jpg"} />
+                                            </div><br/>
+                                            <div style={imageDiv}>
+                                                <img alt="stat" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/taskReasonDetail.jpg"} />
+                                            </div><br/>
+                                        </li>
+                                        <li>6 แจ้งเตือนงานยกเลิกเมื่อถึงกำหนดตามจำนวน (Email, LINE)
+                                            <div style={imageDiv}>
+                                                <img alt="stat" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/alertEmail.jpg"} />
+                                            </div><br/>
+                                            <div style={imageDiv}>
+                                                <img alt="stat" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/alertLine.jpg"} />
+                                            </div><br/>
+                                        </li>
                                     </ul>
                                 </li>
-                            </ul>
-                        </ul>
-                        <ul>
-                            <li><h4><b>สรุปผล</b></h4></li>
-                            <ul>
-                                <li><span className="glyphicon glyphicon-ok" style={{ color: 'green', paddingRight: 5 }}></span>ภาพรวมโครงการ พัฒนาได้สำเร็จ สามารถใช้ Golang, InfluxDB, Grafana และ อื่นๆ ในการพัฒนาโครงการนี้ได้ ตรงไปตามเป้าหมาย New Technology/New Programming Language ไม่ต่ำกว่า 3 จำนวน</li>
-                                <li><span className="glyphicon glyphicon-ok" style={{ color: 'green', paddingRight: 5 }}></span>Golang ได้นำมาใช้สร้างเป็น API สำหรับรับ request จากระบบ bike ที่มี <span style={{ color: 'red' }}><b>Transaction Request ทุกๆ 10 วินาที ประมาณ Max: 67 transactions, Avg: 39 transactions</b></span> ในช่วงเวลา 10:00 - 11:00</li>
-                                <li><span className="glyphicon glyphicon-ok" style={{ color: 'green', paddingRight: 5 }}></span>InfluxDB นั่นเป็น database ประเภท Time-Series ซึ่งเหมาะในการจัดเก็บข้อมูลในรูปแบบ Time, Metric จึงได้นำมาใช้สร้างเป็น Database เพื่อจัดเก็บ Metric ต่างๆ ซึ่งในโครงการนี้จัดเก็บเป็นสองเรื่องคือ 1 การเปิดงาน, 2 จำนวน request </li>
-                                <li><span className="glyphicon glyphicon-ok" style={{ color: 'green', paddingRight: 5 }}></span>Grafana ได้นำมาใช้สร้าง Graph เพื่อ display ข้อมูลจาก InfluxDB ในโครงการนี้ได้สร้าง ทั้งหมด 4 dashboard
+                                <li>
+                                    สร้าง dashboard เพื่อแสดงงานเคลม (เคลมสด) ตามแต่ละสถานะ เพื่อตรวจสอบจำนวนงานและเวลาของงานนั่นๆ ที่มาค้างอยู่ในสถานะ ดังกล่าว
                                     <ul>
-                                        <li>Stat Concurrent Request URL Group by 10 second
+                                        <li>1 Dashboard Operation Process แสดงข้อมูลในทุกสถานะงาน (เปิดงาน, รับงาน, เริ่มงาน/กำลังเดินทาง, ถึงที่เกิดเหตุ/ปฏิบัติงาน, ส่งงาน/ตรวจสอบข้อมูลเบื้องต้น, Pre-Approved, คีย์งานแล้ว)
                                             <div style={imageDiv}>
-                                                <img alt="stat" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtime/stat_concurrent_request_url.jpg"} />
+                                                <img alt="stat" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/dashboardOperationProcess.jpg"} />
                                             </div><br/>
                                         </li>
-                                        <li>Stat Concurrent CreateTask Group by 1 Hr
+                                        <li>2 Dashboard Department Call-Center แสดงข้อมูลสถานะเปิดงาน, งานที่เกิน SLA
                                             <div style={imageDiv}>
-                                                <img alt="stat2" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtime/stat_concurrent_createtask.jpg"} />
+                                                <img alt="stat" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/dashboardCallCenter.jpg"} />
                                             </div><br/>
                                         </li>
-                                        <li>Stat Insurance Task
+                                        <li>3 Dashboard Department Surveyor แสดงข้อมูลสถานะ (รับงาน, เริ่มงาน/กำลังเดินทาง, ถึงที่เกิดเหตุ/ปฏิบัติงาน), งานที่เกิน SLA
                                             <div style={imageDiv}>
-                                                <img alt="stat3" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtime/stat_insurance_task.jpg"} />
+                                                <img alt="stat" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/dashboardDepartmentSurveyor.jpg"} />
                                             </div><br/>
                                         </li>
-                                        <li>Stat Insurance TaskType
+                                        <li>4 Dashboard Department Supervisor แสดงข้อมูลสถานะส่งงาน/ตรวจสอบข้อมูลเบื้องต้น, งานที่เกิน SLA
                                             <div style={imageDiv}>
-                                                <img alt="stat3" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtime/stat_insurance_tasktype.jpg"} />
+                                                <img alt="stat" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/dashboardDepartmentSupervisor.jpg"} />
                                             </div><br/>
                                         </li>
-                                    </ul>
-                                </li>
-                                <li>Other
-                                    <ul>
-                                        <li>Docker Compose</li>
-                                        <li>Google Compute Engine config</li>
+                                        <li>5 Dashboard Department Key แสดงข้อมูลสถานะ Pre-Approved, งานที่เกิน SLA
+                                            <div style={imageDiv}>
+                                                <img alt="stat" style={{ width: 900 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/dashboardDepartmentKey.jpg"} />
+                                            </div><br/>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
