@@ -51,6 +51,12 @@ const MonitoringRealtimePage = () => {
                                         <li>5 Dashboard Department Key แสดงข้อมูลสถานะ Pre-Approved, งานที่เกิน SLA</li>
                                     </ul>
                                 </li>
+                                <li>
+                                    Overview Process
+                                    <div style={imageDiv}>
+                                    <img alt="stat" style={{ width: 800 }} src={process.env.PUBLIC_URL + "/images/monitorrealtimeproduct/overAllMonitorProcess.jpg"} />
+                                     </div><br/>
+                                </li>
                             </ul>
                         </ul>
                         <ul>
@@ -132,20 +138,8 @@ const MonitoringRealtimePage = () => {
                         <ul>
                             <li><h4><b>ต่อยอดในอนาคต/ปรับปรุงเพิ่มเติม</b></h4></li>
                             <ul>
-                                <li><span className="glyphicon glyphicon-wrench" style={{ color: 'orange', paddingRight: 7 }}></span>
-                                    ยังไม่รองรับกรณี คัดลอกงาน ตอนนี้ตรวจจับข้อมูลเฉพาะ กรณี เปิดงานผ่านระบบ Bike
-                                </li>
-                                <li><span className="glyphicon glyphicon-wrench" style={{ color: 'orange', paddingRight: 7 }}></span>
-                                    ยังไม่รองรับกรณี เปิดงานผ่าน API เช่น งานของอาคเนย์
-                                </li>
                                 <li><span className="glyphicon glyphicon-tags" style={{ color: 'green', paddingRight: 7 }}></span>
-                                    ต่อยอดในเรื่องการหา สถิติ การเปิดงานในจังหวัด หรือ เขต ในช่วงเวลาไหน ไหนที่มีจำนวน การเปิดงานเยอะ
-                                </li>
-                                <li><span className="glyphicon glyphicon-tags" style={{ color: 'green', paddingRight: 7 }}></span>
-                                    ต่อยอดในเรื่องการหา สถิติ การเรียกใช้งาน Module ไหนเยอะที่สุด เพื่อที่จะทำการ customize ใน Module นั้นๆ
-                                </li>
-                                <li><span className="glyphicon glyphicon-tags" style={{ color: 'green', paddingRight: 7 }}></span>
-                                    ในกรณีที่มี MicroServices แล้ว จะสามารถใช้ความรู้จากโครงการนี้ ในการทำระบบ Monitoring MicroServices ต่างๆ ได้
+                                    ต่อยอดในเรื่องของการ Monitor transaction ในจุดที่เกิดปัญหาล่าช้า และทำให้ส่งผลด้านลบต่อกระบวนการทำงานอื่นๆ ที่เกี่ยวข้อง เพื่อให้ทราบและสามารถแก้ไขได้ทัน
                                 </li>
                             </ul>
                         </ul>
