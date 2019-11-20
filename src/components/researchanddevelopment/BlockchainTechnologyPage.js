@@ -9,6 +9,10 @@ const BlockchainTechnologyPage = () => {
     width: 700,
     textAlign: "center"
   };
+  let imageDiv900 = {
+    width: 900,
+    textAlign: "left"
+  };
   let imageDivLeft = {
     width: 700,
     textAlign: "left"
@@ -252,7 +256,7 @@ const BlockchainTechnologyPage = () => {
                     className="glyphicon glyphicon-wrench"
                     style={{ color: "orange", paddingRight: 7 }}
                   ></span>
-                  พัฒนาโดยหวังพึ่ง Metamask เป็น wallet เพื่อใช้บน Mobile Application  แต่ Metamask Mobile ยังเป็น version beta เลยมีข้อจำกันหลายอย่าง 
+                  พัฒนาโดยหวังพึ่ง Metamask เป็น wallet เพื่อใช้บน Mobile Application  แต่ Metamask Mobile ยังเป็น version beta เลยมีข้อจำกันหลายอย่าง
                 </li>
                 <li>
                   <span
@@ -266,14 +270,135 @@ const BlockchainTechnologyPage = () => {
                     className="glyphicon glyphicon-tags"
                     style={{ color: "green", paddingRight: 7 }}
                   ></span>
-                  สามารถนำเหรียญ ไปในด้านต่างๆ ที่จะสามารถเปิดเผยข้อมูลที่ได้รับอนุญาตแล้ว เช่น ข้อมูลการเกิดเหตุ, ประเมิณความเสียหาย 
+                  สามารถนำเหรียญ ไปในด้านต่างๆ ที่จะสามารถเปิดเผยข้อมูลที่ได้รับอนุญาตแล้ว เช่น ข้อมูลการเกิดเหตุ, ประเมิณความเสียหาย
+                </li>
+              </ul>
+            </ul>
+            <ul>
+              <li>
+                <h4>
+                  <b>ตัวอย่างหน้าจอระบบ</b>
+                </h4>
+              </li>
+              <ul>
+                <li>
+                  Login Page
+                  <div style={imageDiv900}>
+                    <img
+                      alt="stat3"
+                      style={{ width: 400 }}
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/blockchain/blockchain1.jpg"
+                      }
+                    />
+                    <span
+                      className="glyphicon glyphicon-arrow-right"
+                      style={{ color: "orange", paddingRight: 7, paddingLeft: 7 }}
+                    ></span>
+                    <img
+                      alt="stat3"
+                      style={{ width: 400 }}
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/blockchain/blockchain2.jpg"
+                      }
+                    />
+                  </div>
+                </li>
+                <li>
+                  Home Page
+                  <div style={imageDiv900}>
+                    <img
+                      alt="stat3"
+                      style={{ width: 300 }}
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/blockchain/blockchain3.jpg"
+                      }
+                    />
+                  </div>
+                </li>
+                <li>
+                  Exchange CLM Coin Page
+                  <div style={imageDiv900}>
+                    <img
+                      alt="stat3"
+                      style={{ width: 200 }}
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/blockchain/blockchain4.jpg"
+                      }
+                    />
+                    <span
+                      className="glyphicon glyphicon-arrow-right"
+                      style={{ color: "orange", paddingRight: 7, paddingLeft: 7 }}
+                    ></span>
+                    <img
+                      alt="stat3"
+                      style={{ width: 300 }}
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/blockchain/blockchain5.jpg"
+                      }
+                    />
+                    <span
+                      className="glyphicon glyphicon-arrow-right"
+                      style={{ color: "orange", paddingRight: 7, paddingLeft: 7 }}
+                    ></span>
+                    <img
+                      alt="stat3"
+                      style={{ width: 200 }}
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/blockchain/blockchain6.jpg"
+                      }
+                    />
+                  </div>
+                </li>
+                <li>
+                  Search accident information Page
+                  <div style={imageDiv900}>
+                    <img
+                      alt="stat3"
+                      style={{ width: 200 }}
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/blockchain/blockchain7.jpg"
+                      }
+                    />
+                    <span
+                      className="glyphicon glyphicon-arrow-right"
+                      style={{ color: "orange", paddingRight: 7, paddingLeft: 7 }}
+                    ></span>
+                    <img
+                      alt="stat3"
+                      style={{ width: 300 }}
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/blockchain/blockchain8.jpg"
+                      }
+                    />
+                    <span
+                      className="glyphicon glyphicon-arrow-right"
+                      style={{ color: "orange", paddingRight: 7, paddingLeft: 7 }}
+                    ></span>
+                    <img
+                      alt="stat3"
+                      style={{ width: 200 }}
+                      src={
+                        process.env.PUBLIC_URL +
+                        "/images/blockchain/blockchain9.jpg"
+                      }
+                    />
+                  </div>
                 </li>
               </ul>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
