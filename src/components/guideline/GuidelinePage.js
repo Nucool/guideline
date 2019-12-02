@@ -57,6 +57,7 @@ const GuidelinePage = () => {
                 <li><Link to="/MonitoringRealtimePage">Monitoring Realtime</Link></li>
                 <li><Link to="/MonitoringRealtimeProductPage">Monitoring Realtime Product</Link></li>
                 <li><Link to="/BlockchainTechnologyPage">Blockchain Technology</Link></li>
+                <li><Link to="/DataVisualizationPage">Data Visualization</Link></li>
               </ul>
             </li>
             <li>Business Process

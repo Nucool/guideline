@@ -18,6 +18,7 @@ import ProjectOnTeamPage from './components/team/ProjectOnTeamPage'
 import MonitoringRelatimePage from './components/researchanddevelopment/MonitoringRealtimePage'
 import MonitoringRelatimeProductPage from './components/researchanddevelopment/MonitoringRealtimeProductPage'
 import BlockchainTechnologyPage from './components/researchanddevelopment/BlockchainTechnologyPage'
+import DataVisualizationPage from './components/researchanddevelopment/DataVisualizationPage'
 
 const Routes = props => (
   <Router basename={process.env.PUBLIC_URL}>
@@ -38,6 +39,7 @@ const Routes = props => (
         <Public exact path="/MonitoringRealtimePage" component={MonitoringRelatimePage} {...props} />
         <Public exact path="/MonitoringRealtimeProductPage" component={MonitoringRelatimeProductPage} {...props} />
         <Public exact path="/BlockchainTechnologyPage" component={BlockchainTechnologyPage} {...props} />
+        <Public exact path="/DataVisualizationPage" component={DataVisualizationPage} {...props} />
       </Switch>
     </div>
   </Router>
