@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DataVisualizationPage = () => {
+const CarWoundedPredictionPage = () => {
     let marginBox = {
         marginLeft: 20,
         marginBottom: 30
@@ -21,7 +21,7 @@ const DataVisualizationPage = () => {
         <div className="container-fluid">
             <div className="row">
                 <div className="col-sm-12">
-                    <h2>Data Visualization</h2>
+                    <h2>Car wounded prediction</h2>
                     <div style={marginBox}>
                         <h4>
                             <ul>
@@ -34,7 +34,7 @@ const DataVisualizationPage = () => {
                             <img
                                 alt="asis"
                                 style={{ width: 900 }}
-                                src={process.env.PUBLIC_URL + "/images/datavisualization/dv1.jpg"}
+                                src={process.env.PUBLIC_URL + "/images/carwounded/dp1.jpg"}
                             />
                         </div>
                     </div>
@@ -61,10 +61,10 @@ const DataVisualizationPage = () => {
                             </li>
                             <ul>
                                 <li>
-                                    สร้าง Project Data Visualization แสดงข้อมูลการเปลี่ยนบริษัทประกันภัย เช่น จากประกันภัย A เป็นประกันภัย B -- NewTechnology
+                                    สร้าง Project Car Wounded Prediction นำข้อมูลจากระบบ bike prodiction (ข้อมูลรถประกัน) มาวิเคราะห์ ความน่าจะเป็นที่จะเกิดการเสียชีวิต จากข้อมูล ประเภทรถ, สีรถ, เพศ, อายุ -- NewTechnology
                       ที่คาดหวังจะใช้{" "}
                                     <span style={{ color: "red" }}>
-                                        <b>Python, Pandas, d3js</b>
+                                        <b>Pandas, DecisionTreeClassifier, KNeighborClassifier, RandomForestClassifier</b>
                                     </span>
                                 </li>
                             </ul>
@@ -81,14 +81,6 @@ const DataVisualizationPage = () => {
                       <ul>
                                         <li>
                                             <a
-                                                href="https://www.python.org/"
-                                                target="_blank"
-                                            >
-                                                Python
-                          </a>
-                                        </li>
-                                        <li>
-                                            <a
                                                 href="https://pandas.pydata.org/"
                                                 target="_blank"
                                             >
@@ -97,10 +89,26 @@ const DataVisualizationPage = () => {
                                         </li>
                                         <li>
                                             <a
-                                                href="https://d3js.org/"
+                                                href="https://www.datacamp.com/community/tutorials/decision-tree-classification-python"
                                                 target="_blank"
                                             >
-                                                d3js
+                                                DecisionTreeClassifier
+                          </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://www.datacamp.com/community/tutorials/k-nearest-neighbor-classification-scikit-learn"
+                                                target="_blank"
+                                            >
+                                                KNeighborsClassifier
+                          </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://www.datacamp.com/community/tutorials/random-forests-classifier-python"
+                                                target="_blank"
+                                            >
+                                                RandomForestClassifier
                           </a>
                                         </li>
                                     </ul>
@@ -120,24 +128,63 @@ const DataVisualizationPage = () => {
                                             className="glyphicon glyphicon-remove"
                                             style={{ color: "red", paddingRight: 5 }}
                                         ></span>
-                                        ตอนแรกจะใช้ข้อมูลเลขตัวถัง แต่ข้อมูลไม่สามารถใช้งานได้ เพราะ ข้อมูลขาดความถูกต้องตามรูป
+                                        ข้อมูลจำนวนมากไม่มีความถูกต้อง และ ไม่สามารถนำมาเป็นข้อมูลสำหรับใช้ Traning Model ได้
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span
+                                            className="glyphicon glyphicon-ok"
+                                            style={{ color: "green", paddingRight: 5 }}
+                                        ></span>
+                                        ดูข้อมูลเชิงสถิติ เพื่อจะทำมาวิเคราะห์
                                     </div>
                                     <img
                                         alt="asis"
                                         style={{ width: 900 }}
-                                        src={process.env.PUBLIC_URL + "/images/datavisualization/dv2.jpg"}
+                                        src={process.env.PUBLIC_URL + "/images/carwounded/dp4.jpg"}
                                     />
                                 </li>
                                 <li>
-                                    <span
-                                        className="glyphicon glyphicon-remove"
-                                        style={{ color: "red", paddingRight: 5 }}
-                                    ></span>
-                                    ข้อมูลทะเบียนรถมีความหลากหลายในการกรอกข้อมูล เช่น ป้ายแดง กรอกหลากหลาย ไม่สามารถใช้งานได้ และ ข้อมูลทะเบียนระอื่นๆ ต้องทำการ cleansing data ให้พร้อมใช้งาน
+                                    <div>
+                                        <span
+                                            className="glyphicon glyphicon-ok"
+                                            style={{ color: "green", paddingRight: 5 }}
+                                        ></span>
+                                        ดูข้อมูล mean ของยี่ห้อรถยนต์ ที่เกิดอุบัติเหตุ
+                                    </div>
                                     <img
                                         alt="asis"
-                                        style={{ width: 900 }}
-                                        src={process.env.PUBLIC_URL + "/images/datavisualization/dv3.jpg"}
+                                        style={{ width: 900 }} 
+                                        src={process.env.PUBLIC_URL + "/images/carwounded/dp5.jpg"}
+                                    />
+                                </li>
+                                <li>
+                                    <div>
+                                        <span
+                                            className="glyphicon glyphicon-ok"
+                                            style={{ color: "green", paddingRight: 5 }}
+                                        ></span>
+                                        แบ่งข้อมูลที่ 50 % ที่เกิดความเสียหายถึงชีวิต
+                                    </div>
+                                    <img
+                                        alt="asis"
+                                        style={{ width: 900 }} 
+                                        src={process.env.PUBLIC_URL + "/images/carwounded/dp6.jpg"}
+                                    />
+                                </li>
+                                <li>
+                                    <div>
+                                        <span
+                                            className="glyphicon glyphicon-ok"
+                                            style={{ color: "green", paddingRight: 5 }}
+                                        ></span>
+                                        นำข้อมูลชุดทดสอบ เพื่อหาความแม่นยำของ model ผลเป็นดังรูป
+                                    </div>
+                                    <img
+                                        alt="asis"
+                                        style={{ width: 900 }} 
+                                        src={process.env.PUBLIC_URL + "/images/carwounded/dp7.jpg"}
                                     />
                                 </li>
                                 <li>
@@ -145,7 +192,7 @@ const DataVisualizationPage = () => {
                                         className="glyphicon glyphicon-ok"
                                         style={{ color: "green", paddingRight: 5 }}
                                     ></span>
-                                    ภาพรวมโครงการ พัฒนาได้สำเร็จ สามารถใช้ Python, Pandas(Python), d3js ในการพัฒนาโครงการนี้ได้
+                                    ภาพรวมโครงการ พัฒนาได้สำเร็จ สามารถใช้ DecisionTreeClassifier, KNeighborClassifier, RandomForestClassifier ในการพัฒนาโครงการนี้ได้
                                     ตรงไปตามเป้าหมาย New Technology/New Programming Language
                                     ไม่ต่ำกว่า 3 จำนวน
                     </li>
@@ -163,7 +210,7 @@ const DataVisualizationPage = () => {
                                         className="glyphicon glyphicon-wrench"
                                         style={{ color: "orange", paddingRight: 7 }}
                                     ></span>
-                                    ต้องขอปรับกระบวนการทำงานเพื่อให้ได้ ข้อมูลที่สามารถใช้ต่อในอนาคตได้
+                                    ทำขึ้นเพื่อเป็นต้นแบบ และ แนวทางการเรียนรู้เกี่ยวกับ data science
                     </li>
                             </ul>
                         </ul>
@@ -178,7 +225,14 @@ const DataVisualizationPage = () => {
                                     <img
                                         alt="asis"
                                         style={{ width: 900 }}
-                                        src={process.env.PUBLIC_URL + "/images/datavisualization/dv4.png"}
+                                        src={process.env.PUBLIC_URL + "/images/carwounded/dp2.jpg"}
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        alt="asis"
+                                        style={{ width: 600 }}
+                                        src={process.env.PUBLIC_URL + "/images/carwounded/dp3.jpg"}
                                     />
                                 </li>
                             </ul>
@@ -190,4 +244,4 @@ const DataVisualizationPage = () => {
     )
 }
 
-export default DataVisualizationPage
+export default CarWoundedPredictionPage
