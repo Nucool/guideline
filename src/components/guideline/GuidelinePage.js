@@ -11,7 +11,7 @@ const team = [
 ]
 
 const TeamTable = (props) => {
-  return(
+  return (
     <li>{props.name} Team
       <ul>
         <li>Mission</li>
@@ -44,7 +44,7 @@ const GuidelinePage = () => {
                 <li><Link to="/ProjectOnTeamPage">Project On Team</Link></li>
               </ul>
             </li>
-            { team.map(item => <TeamTable key={item.name} {...item} />)}
+            {team.map(item => <TeamTable key={item.name} {...item} />)}
             <li>Knowledge Sharing
               <ul>
                 <li><Link to="/githubPages">GitHub Pages</Link></li>
@@ -54,11 +54,16 @@ const GuidelinePage = () => {
             </li>
             <li>Research and Development Project
               <ul>
-                <li><Link to="/MonitoringRealtimePage">Monitoring Realtime</Link></li>
-                <li><Link to="/MonitoringRealtimeProductPage">Monitoring Realtime Product</Link></li>
-                <li><Link to="/BlockchainTechnologyPage">Blockchain Technology</Link></li>
-                <li><Link to="/DataVisualizationPage">Data Visualization</Link></li>
-                <li><Link to="/CarWoundedPredictionPage">Car Wounded Prediction</Link></li>
+                <li>
+                  2019
+                  <ul>
+                    <li><Link to="/MonitoringRealtimePage">Monitoring Realtime</Link></li>
+                    <li><Link to="/MonitoringRealtimeProductPage">Monitoring Realtime Product</Link></li>
+                    <li><Link to="/BlockchainTechnologyPage">Blockchain Technology</Link></li>
+                    <li><Link to="/DataVisualizationPage">Data Visualization</Link></li>
+                    <li><Link to="/CarWoundedPredictionPage">Car Wounded Prediction</Link></li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>Business Process
