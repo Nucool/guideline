@@ -87,7 +87,7 @@ const CarDamageDetectionPage = () => {
                                             <img
                                                 alt="asis"
                                                 style={{ width: 900 }}
-                                                src={process.env.PUBLIC_URL + "/images/cardamagedetection/1.png"}
+                                                src={process.env.PUBLIC_URL + "/images/cardamagedetection/c1.png"}
                                             />
                                         </li>
                                         <li style={{ marginTop: '15px' }}>
@@ -96,14 +96,14 @@ const CarDamageDetectionPage = () => {
                                                 <img
                                                     alt="asis"
                                                     style={{ width: 900 }}
-                                                    src={process.env.PUBLIC_URL + "/images/cardamagedetection/2.png"}
+                                                    src={process.env.PUBLIC_URL + "/images/cardamagedetection/c2.png"}
                                                 />
                                             </div>
                                             <div style={{ marginLeft: '50px', marginTop: '20px' }}>
                                                 <img
                                                     alt="asis"
                                                     style={{ width: 500 }}
-                                                    src={process.env.PUBLIC_URL + "/images/cardamagedetection/3.png"}
+                                                    src={process.env.PUBLIC_URL + "/images/cardamagedetection/c3.png"}
                                                 />
                                             </div>
                                         </li>
@@ -119,7 +119,7 @@ const CarDamageDetectionPage = () => {
                                                 <img
                                                     alt="asis"
                                                     style={{ width: 900 }}
-                                                    src={process.env.PUBLIC_URL + "/images/cardamagedetection/4.png"}
+                                                    src={process.env.PUBLIC_URL + "/images/cardamagedetection/c4.png"}
                                                 />
                                             </div>
                                         </li>
@@ -129,17 +129,17 @@ const CarDamageDetectionPage = () => {
                                                 <img
                                                     alt="asis"
                                                     style={{ width: 900 }}
-                                                    src={process.env.PUBLIC_URL + "/images/cardamagedetection/5.png"}
+                                                    src={process.env.PUBLIC_URL + "/images/cardamagedetection/c5.png"}
                                                 />
                                                 <img
                                                     alt="asis"
                                                     style={{ width: 900 }}
-                                                    src={process.env.PUBLIC_URL + "/images/cardamagedetection/6.png"}
+                                                    src={process.env.PUBLIC_URL + "/images/cardamagedetection/c6.png"}
                                                 />
                                                 <img
                                                     alt="asis"
                                                     style={{ width: 900 }}
-                                                    src={process.env.PUBLIC_URL + "/images/cardamagedetection/7.png"}
+                                                    src={process.env.PUBLIC_URL + "/images/cardamagedetection/c7.png"}
                                                 />
                                             </div>
                                         </li>
