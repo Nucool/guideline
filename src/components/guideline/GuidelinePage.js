@@ -64,6 +64,12 @@ const GuidelinePage = () => {
                     <li><Link to="/CarWoundedPredictionPage">Car Wounded Prediction</Link></li>
                   </ul>
                 </li>
+                <li>
+                  2020
+                  <ul>
+                    <li><Link to="/CarDamageDetectionPage">Car Damage Detection</Link></li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>Business Process
