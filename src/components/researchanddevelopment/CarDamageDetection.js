@@ -230,6 +230,29 @@ const CarDamageDetectionPage = () => {
                                 </li>
                             </ul>
                         </ul>
+                        <ul>
+                            <li>
+                                <h4>
+                                    <b>สิ่งที่ทีมคาดหวัง</b>
+                                </h4>
+                            </li>
+                            <ul> 
+                                <li style={{paddingTop:10, color:'red'}}><b>Claim Di Cloud (Cosmos)</b><br/><br/>
+                                    <img
+                                        alt="asis"
+                                        style={{ width: 900, marginLeft: '10px' }}
+                                        src={process.env.PUBLIC_URL + "/images/cardamagedetection/ClaimDiCloud3.jpg"}
+                                    />
+                                </li>
+                                <li style={{color:'red'}}><b>Sale Package</b><br/><br/>
+                                    <img
+                                        alt="asis"
+                                        style={{ width: 900, border: 'solid 1px black', marginLeft: '10px' }}
+                                        src={process.env.PUBLIC_URL + "/images/cardamagedetection/ClaimDiCloud.jpg"}
+                                    /><br/><br/><br/><br/><br/><br/>
+                                </li>
+                            </ul>
+                        </ul>
 
 
                     </div>
