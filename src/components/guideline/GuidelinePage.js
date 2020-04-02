@@ -69,6 +69,7 @@ const GuidelinePage = () => {
                   <ul>
                     <li><Link to="/CarDamageDetectionPage">Car Damage Detection</Link></li>
                     <li><Link to="/CostEstimationPage">Cost Estimation</Link></li>
+                    <li><Link to="/DrivingAnalyticPage">Driving Analytic</Link></li>
                   </ul>
                 </li>
               </ul>
