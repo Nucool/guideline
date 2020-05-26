@@ -70,6 +70,7 @@ const GuidelinePage = () => {
                     <li><Link to="/CarDamageDetectionPage">Car Damage Detection</Link></li>
                     <li><Link to="/CostEstimationPage">Cost Estimation</Link></li>
                     <li><Link to="/DrivingAnalyticPage">Driving Analytic</Link></li>
+                    <li><Link to="/Cosmos04Page">ChromeExtension, CarDamageDetection Mobile and Web application (Cosmos)</Link></li>
                   </ul>
                 </li>
               </ul>
