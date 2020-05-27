@@ -202,6 +202,34 @@ const Cosmos04Page = () => {
                                 </li>
                                 <li>
                                     Web Application
+                                    <div>
+                                        <img
+                                            alt="asis"
+                                            style={{ width: 700, border: 'solid 1px black' }}
+                                            src={process.env.PUBLIC_URL + "/images/cosmos04/web_cosmos_01.jpg"}
+                                        />
+                                    </div>
+                                    <div className="text-center"
+                                        style={{ width: 700, marginBottom: 15 }}><b>แสดงงานทั้งหมดที่ Mobile ทำรายการเข้ามา</b></div>
+                                    <div>
+                                        <img
+                                            alt="asis"
+                                            style={{ width: 700, border: 'solid 1px black' }}
+                                            src={process.env.PUBLIC_URL + "/images/cosmos04/web_cosmos_02.jpg"}
+                                        />
+                                    </div>
+                                    <div className="text-center"
+                                        style={{ width: 700, marginBottom: 15 }}><b>แสดงรายละเอียดของแต่ละ งาน และ รูปความเสียหาย</b></div>
+                                    <div>
+                                        <img
+                                            alt="asis"
+                                            style={{ width: 700, border: 'solid 1px black' }}
+                                            src={process.env.PUBLIC_URL + "/images/cosmos04/web_cosmos_03.jpg"}
+                                        />
+                                    </div>
+                                    <div className="text-center"
+                                        style={{ width: 700, marginBottom: 15 }}><b>สามารถแก้ไขรายละเอียดความเสียหายได้</b></div>
+
                                 </li>
                             </ul>
                         </ul>
