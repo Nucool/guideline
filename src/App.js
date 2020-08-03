@@ -23,6 +23,7 @@ import CarDamageDetectionPage from './components/researchanddevelopment/CarDamag
 import CostEstimationPage from './components/researchanddevelopment/CostEstimationPage'
 import DrivingAnalyticPage from './components/researchanddevelopment/DrivingAnalyticPage'
 import Cosmos04Page from './components/researchanddevelopment/Cosmos04Page'
+import SnapPOCPage from './components/researchanddevelopment/SnapPOCPage'
 import ProjectOnTeamPage from './components/researchanddevelopmentteam/ProjectOnTeamPage'
 import ScrollToTop from './ScrollToTop';
 
@@ -51,6 +52,7 @@ const Routes = props => (
         <Public exact path="/CostEstimationPage" component={CostEstimationPage} {...props} />
         <Public exact path="/DrivingAnalyticPage" component={DrivingAnalyticPage} {...props} />
         <Public exact path="/Cosmos04Page" component={Cosmos04Page} {...props} />
+        <Public exact path="/SnapPOCPage" component={SnapPOCPage} {...props} />
         <Public exact path="/ProjectOnTeamPage" component={ProjectOnTeamPage} {...props} />
       </Switch>
       <ScrollToTop />
